@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Let's Go Improve</title>
 
+    <!-- ICONS -->
+    <link rel="stylesheet" href="assets/Fonts/style.css" />
+
     <!-- STYLES -->
     <link rel="stylesheet" href="style.css" />
 
@@ -26,7 +29,18 @@
           <img class="logo" src="assets/logo.png" alt="Logo Let´s Go Improve" />
         </div>
         <!-- menu -->
-        <div class="menu"></div>
+        <div class="menu">
+          <ul class="grid">
+            <li><a href="#home" class="title">Início</a></li>
+            <li><a href="#astartup" class="title">A Startup</a></li>
+            <li><a href="#services" class="title">Serviços</a></li>
+            <li><a href="clients" class="title">Clientes</a></li>
+            <li><a href="contact" class="title">Contato</a></li>
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
 
@@ -34,6 +48,7 @@
 
     <!-- MAIN -->
     <main>
+      <!-- INICIO -->
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
@@ -43,7 +58,7 @@
             />
           </div>
           <div class="text">
-            <h2>Pronto para o próximo nível?</h2>
+            <h2 class="title">Pronto para o próximo nível?</h2>
             <p>
               Está preparado para levar a sua empresa para uma nova posição no
               mercado? Agende um horário e descubra o que podemos fazer juntos.
@@ -54,16 +69,65 @@
       </section>
       <div class="divider-2"></div>
 
-      <section class="section">
-        <div class="container">Outra Section</div>
+      <!-- SOBRE -->
+      <section class="section" id="astartup">
+        <div class="container grid">
+          <div class="imagestartup">
+            <img
+              src="assets/austin-distel-wD1LRb9OeEo-unsplash.jpg"
+              alt="4 homens olhando para um quadro de tarefas"
+            />
+          </div>
+          <div class="textstartup">
+            <h2 class="title">A Startup</h2>
+            <p>
+              A <b>LET'S GO IMPROVE</b> surge como uma startup para solucionar
+              problemas criativos e de presença digital que muitas pessoas
+              enfrentam devido a escassez de empresas do segmento na região da
+              campanha. Nosso propósito é trazer soluções criativas e um serviço
+              qualificado de gerenciamento de mídias sociais e design gráfico
+              corporativo. Viemos como uma solução definitiva para alavancar seu
+              negócio por meio de identidades visuais limpas, propagandas
+              minimalistas e artes modernas, além de um gerenciamento sobre as
+              redes sociais que tornará seu negócio visivel ao seu público alvo.
+            </p>
+          </div>
+          <div class="imagemiq">
+            <img
+              src="assets/Prancheta 5.png"
+              alt="Jovem negro com cavanhaque usando óculos e sorrindo"
+            />
+          </div>
+          <div class="textmiq">
+            <h2 class="title">Miqueias Costa</h2>
+            <p>
+              Fundador da <b>LET’S GO IMPROVE</b>! Nascido em 2001 na Cidade de
+              Vitoria - ES, criado no Rio de Janeiro. É formado em Marketing
+              Digital. Seu intuito é dar significado a marca de seus clientes
+              com seus conhecimentos em Marketing & Design Gráfico.
+            </p>
+          </div>
+        </div>
       </section>
+
+      <div class="divider-1"></div>
+
+      <!-- SERVIÇOS -->
+      <section class="section" id="services">
+        <div class="container grid">Serviços</div>
+      </section>
+
+      <!-- CLIENTES -->
       <section class="section"></section>
-      <section class="section"></section>
+
+      <!-- CONTATOS -->
       <section class="section"></section>
     </main>
 
     <!-- FOOTER -->
 
     <footer class="section"></footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
