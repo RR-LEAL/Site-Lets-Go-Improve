@@ -18,16 +18,16 @@ for (const link of links)
   })
 
 /* mudar o header da página quando der scroll*/
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
+function changeHeaderWhenScroll() {
+  const header = document.querySelector('#header')
+  const navHeight = header.offsetHeight
 
-window.addEventListener('scroll', function () {
   if (window.scrollY >= navHeight) {
     header.classList.add('scroll')
   } else {
     header.classList.remove('scroll')
   }
-})
+}
 
 /* Clients carousel slider swiper */
 const swiper = new Swiper('.swiper-container', {
@@ -52,7 +52,24 @@ scrollReveal.reveal(
   #astartup .imagestartup, #astartup .textstartup, #astartup .imagemiq, #astartup .textmiq,
   #services header, #services .card,
   #clients header, #clients .clients,
-  #contact .text, #contact .links
+  #contact .text, #contact .links,
+  footer .logo, footer .social
   `,
   { interval: 100 }
 )
+
+/* Botão voltar para o topo */
+function backToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+  if (window.scrollY >= 600) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
+/*When Scroll */
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  backToTop()
+})
